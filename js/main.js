@@ -4,7 +4,8 @@ var app = new Vue({
   el:'#app',
   data: {
     dischi: [],
-    generi:[]
+    generi:[],
+    prova: ''
   },
   mounted(){
     axios
@@ -21,6 +22,7 @@ var app = new Vue({
 
     })
   }
+
 
 
 
