@@ -19,15 +19,15 @@
             </div>
         </header>
 
-        <div class="cds-container container">
-            <!-- Disco ad esempio -->
-            <div class="cd">
-                <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Ten_Summoner%27s_Tales.jpg" alt="">
-                <h3>Ten's Summoners Tales</h3>
-                <span class="author">Sting</span>
-                <span class="year">1993</span>
-            </div>
-        </div>
+          <div class="cds-container container" id="app">
+              <!-- Disco ad esempio -->
+              <div class="cd" v-for="disco in dischi">
+                  <img :src="disco.poster" alt="disco.poster">
+                  <h3>{{ disco.title }}</h3>
+                  <span class="author">{{ disco.author }}</span>
+                  <span class="year">{{ disco.year }}</span>
+              </div>
+          </div>
 
 
         <script src="js/main.js" charset="utf-8"></script>
